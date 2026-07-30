@@ -34,5 +34,5 @@ Point your domain `richardsonholdingsusa.com` DNS to your hosting provider.
 
 ## Contact
 
-- **Phone:** (615) 873-0376
+- **Phone:** (629) 206-6237
 - **Email:** thom@richardsonholdingsusa.com
