@@ -20,8 +20,7 @@ RichardsonHoldingsSite/
 ├── styles.css      # Styles
 ├── script.js       # Navigation & form handling
 ├── assets/
-│   ├── logo-full.png
-│   ├── logo-icon.png
+│   ├── logo.png
 │   └── thom.jpg
 └── README.md
 ```
