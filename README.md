@@ -1,6 +1,6 @@
-# Richardson Holdings USA
+# Richardson Partners, LLC
 
-Single-page website for [richardsonholdingsusa.com](https://richardsonholdingsusa.com) — a veteran-owned real estate solutions company.
+Single-page website for [richardsonpartnersllc.com](https://richardsonpartnersllc.com) — a veteran-owned real estate solutions company.
 
 ## Local Preview
 
@@ -30,9 +30,9 @@ RichardsonHoldingsSite/
 
 This is a static site — deploy the entire folder to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, or your web server).
 
-Point your domain `richardsonholdingsusa.com` DNS to your hosting provider.
+Point your domain `richardsonpartnersllc.com` DNS to your hosting provider.
 
 ## Contact
 
 - **Phone:** (629) 206-6237
-- **Email:** thom@richardsonholdingsusa.com
+- **Email:** thom@richardsonpartnersllc.com
