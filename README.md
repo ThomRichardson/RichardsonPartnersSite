@@ -22,6 +22,12 @@ https://richardsonpartnersllc.com/contact-thom
 
 Mobile-first contact page with photo, tap-to-call/email links, and a Save to Contacts button (vCard).
 
+**QR display page** (show on your phone):
+
+```
+https://richardsonpartnersllc.com/contact-thom/qr
+```
+
 ## Structure
 
 ```
@@ -29,7 +35,11 @@ RichardsonHoldingsSite/
 ├── index.html           # Single-page site
 ├── contact-thom/        # Mobile contact card (QR code)
 │   ├── index.html
-│   └── card.css
+│   ├── card.css
+│   └── qr/
+│       ├── index.html
+│       ├── qr.css
+│       └── qr-code.png
 ├── card.html            # Redirects to /contact-thom
 ├── styles.css           # Main site styles
 ├── script.js       # Navigation handling
