@@ -1,5 +1,6 @@
 :root {
-  --cream: #f8f6f1;
+  --navy: #000066;
+  --navy-dark: #000044;
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
@@ -17,7 +18,7 @@ html, body {
 }
 
 body {
-  background: var(--cream);
+  background: linear-gradient(165deg, var(--navy-dark) 0%, var(--navy) 100%);
 }
 
 .qr-page {
