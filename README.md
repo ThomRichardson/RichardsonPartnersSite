@@ -14,10 +14,10 @@ Then visit `http://localhost:3000`.
 
 ## Digital Business Card (QR Code)
 
-Use **`/card.html`** as your QR code destination:
+Use **`/contact-thom`** as your QR code destination:
 
 ```
-https://richardsonpartnersllc.com/card.html
+https://richardsonpartnersllc.com/contact-thom
 ```
 
 Mobile-first contact page with photo, tap-to-call/email links, and a Save to Contacts button (vCard).
@@ -26,10 +26,12 @@ Mobile-first contact page with photo, tap-to-call/email links, and a Save to Con
 
 ```
 RichardsonHoldingsSite/
-├── index.html      # Single-page site
-├── card.html       # Mobile contact card (QR code)
-├── card.css        # Contact card styles
-├── styles.css      # Main site styles
+├── index.html           # Single-page site
+├── contact-thom/        # Mobile contact card (QR code)
+│   ├── index.html
+│   └── card.css
+├── card.html            # Redirects to /contact-thom
+├── styles.css           # Main site styles
 ├── script.js       # Navigation handling
 ├── assets/
 │   ├── logo.png
