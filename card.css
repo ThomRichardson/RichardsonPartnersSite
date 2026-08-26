@@ -1,0 +1,290 @@
+/* Richardson Partners — Mobile contact card */
+
+:root {
+  --navy: #000066;
+  --navy-dark: #000044;
+  --gold: #c9a962;
+  --gold-light: #dfc88a;
+  --cream: #f8f6f1;
+  --white: #ffffff;
+  --charcoal: #1a1a2e;
+  --gray-600: #5a5a6e;
+  --gray-400: #9494a8;
+  --gray-200: #e8e6e1;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--charcoal);
+  background: var(--cream);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-page {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-hero {
+  background: linear-gradient(165deg, var(--navy-dark) 0%, var(--navy) 100%);
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.card-logo {
+  height: 32px;
+  width: auto;
+  margin: 0 auto 1.75rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+.card-avatar {
+  width: 148px;
+  height: 148px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  border: 3px solid var(--white);
+}
+
+.card-name {
+  font-family: var(--font-serif);
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.card-role {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 0.2rem;
+}
+
+.card-org {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.25rem;
+}
+
+.card-tagline {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  padding: 0.45rem 0.875rem;
+  border-radius: 100px;
+  border: 1px solid rgba(201, 169, 98, 0.45);
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.card-badge svg {
+  width: 14px;
+  height: 14px;
+  color: var(--gold);
+}
+
+.card-body {
+  flex: 1;
+  padding: 1.5rem 1.25rem calc(1.5rem + var(--safe-bottom));
+}
+
+.save-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 14px;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 24px rgba(0, 0, 102, 0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.save-contact:active {
+  transform: scale(0.98);
+  background: var(--navy-dark);
+}
+
+.save-contact svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.contact-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.125rem;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contact-action:active {
+  border-color: var(--gold);
+  box-shadow: 0 4px 16px rgba(0, 0, 102, 0.08);
+}
+
+.contact-action-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.contact-action-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--navy);
+}
+
+.contact-action-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-action-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 0.15rem;
+}
+
+.contact-action-value {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact-action-chevron {
+  width: 18px;
+  height: 18px;
+  color: var(--gray-400);
+  flex-shrink: 0;
+}
+
+.card-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--gray-200);
+  text-align: center;
+}
+
+.card-footer a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+.card-footer a:active {
+  color: var(--navy);
+}
+
+@media (min-width: 481px) {
+  .card-page {
+    padding: 1.5rem 0;
+  }
+
+  .card-hero {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .card-body {
+    background: var(--white);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 24px 64px rgba(0, 0, 102, 0.1);
+  }
+
+  .card-page {
+    box-shadow: 0 24px 64px rgba(0, 0, 102, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: auto;
+  }
+}
