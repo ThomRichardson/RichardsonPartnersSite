@@ -10,8 +10,8 @@
     const phone = document.getElementById('phone').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
-    const transactional = document.getElementById('consent-transactional').checked;
     const marketing = document.getElementById('consent-marketing').checked;
+    const nonMarketing = document.getElementById('consent-non-marketing').checked;
 
     const subject = encodeURIComponent(
       'Contact from ' + firstName + ' ' + lastName + ' — Richardson Partners, LLC'
@@ -19,10 +19,10 @@
     const body = encodeURIComponent(
       'First Name: ' + firstName + '\n' +
       'Last Name: ' + lastName + '\n' +
-      'Phone: ' + phone + '\n' +
+      'Phone: ' + (phone || 'Not provided') + '\n' +
       'Email: ' + email + '\n' +
-      'Transactional SMS Consent: ' + (transactional ? 'Yes' : 'No') + '\n' +
-      'Marketing SMS Consent: ' + (marketing ? 'Yes' : 'No') + '\n\n' +
+      'Marketing SMS Consent: ' + (marketing ? 'Yes' : 'No') + '\n' +
+      'Non-Marketing SMS Consent: ' + (nonMarketing ? 'Yes' : 'No') + '\n\n' +
       (message || 'No message provided.')
     );
 

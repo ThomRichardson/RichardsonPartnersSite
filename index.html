@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="#home" class="logo-link">
+      <a href="/" class="logo-link">
         <img src="assets/logo.png" alt="Richardson Partners, LLC" class="logo">
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -23,9 +24,11 @@
         <span></span>
       </button>
       <nav class="site-nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/privacy-policy" class="nav-legal-link">Privacy</a>
+        <a href="/terms-of-service" class="nav-legal-link">Terms</a>
         <a href="/contact" class="nav-cta">Contact</a>
       </nav>
     </div>
@@ -46,7 +49,7 @@
         </p>
         <div class="hero-actions">
           <a href="/contact" class="btn btn-primary">Get in Touch</a>
-          <a href="#about" class="btn btn-outline">Learn More</a>
+          <a href="/about" class="btn btn-outline">Learn More</a>
         </div>
       </div>
       <div class="hero-scroll">
@@ -72,91 +75,84 @@
       </div>
     </section>
 
-    <section class="about section" id="about">
-      <div class="container about-grid">
-        <div class="about-profile">
-          <div class="about-avatar">
-            <img src="assets/thom.jpg" alt="Thom Richardson">
+    <section class="home-preview">
+      <div class="container">
+        <div class="home-preview-grid">
+          <div class="home-preview-card">
+            <h3>About Us</h3>
+            <p>
+              Veteran-owned firm built on service, discipline, and getting things done.
+              We specialize in off-market opportunities and connecting the right people.
+            </p>
+            <a href="/about">Learn about our team</a>
           </div>
-          <div class="about-identity">
-            <h3>Thom Richardson</h3>
-            <span class="about-title">Founder &amp; CEO</span>
-          </div>
-        </div>
-        <div class="about-content">
-          <span class="section-label">About Us</span>
-          <h2>Led by Experience,<br>Grounded in Integrity</h2>
-          <p>
-            Richardson Partners, LLC is a veteran-owned firm built on service, discipline,
-            and getting things done. We specialize in finding off-market opportunities and
-            bringing together the people who can move them forward — quickly and cleanly.
-          </p>
-          <p>
-            Whether you're sitting on a property that needs a creative path forward or
-            you're looking for your next deal, we operate with transparency and the same
-            accountability that defines our military heritage. No fluff, no wasted time.
-          </p>
-          <div class="veteran-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M12 2L15 8.5L22 9.5L17 14.5L18 22L12 18.5L6 22L7 14.5L2 9.5L9 8.5L12 2Z"/>
-            </svg>
-            <div>
-              <strong>Proudly Veteran-Owned</strong>
-              <span>Service, honor, and commitment in every transaction</span>
-            </div>
+          <div class="home-preview-card">
+            <h3>Our Services</h3>
+            <p>
+              Off-market deals, creative solutions for property owners, and a vetted buyer
+              network ready to act when the right opportunity appears.
+            </p>
+            <a href="/services">View our services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services section" id="services">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">What We Do</span>
-          <h2>Connecting Deals<br>&amp; Delivering Results</h2>
-          <p class="section-intro">
-            We work behind the scenes to source opportunities, solve problems,
-            and make transactions happen — so everyone walks away better off.
-          </p>
+    <section class="form-section" id="get-in-touch">
+      <div class="container form-section-inner">
+        <div class="form-section-header">
+          <span class="section-label">Get In Touch</span>
+          <h2>Send Us a Message</h2>
+          <p>Have a property or looking for a deal? Reach out and we'll be in touch.</p>
         </div>
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
-              </svg>
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first-name" required placeholder="First name">
             </div>
-            <h3>Off-Market Deals</h3>
-            <p>
-              We source properties before they hit the open market — giving our network
-              access to opportunities most people never see.
-            </p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-              </svg>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last-name" required placeholder="Last name">
             </div>
-            <h3>Creative Solutions</h3>
-            <p>
-              Not every situation fits the traditional mold. We work with property owners
-              who need a fast, flexible path forward — on their terms.
-            </p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
-              </svg>
-            </div>
-            <h3>Buyer Network</h3>
-            <p>
-              A vetted network of serious buyers ready to act. When we find the right
-              deal, we know exactly who to call.
-            </p>
-          </article>
-        </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
+          </div>
+          <fieldset class="consent-group">
+            <legend class="sr-only">SMS consent options</legend>
+            <label class="consent-option">
+              <input type="checkbox" id="consent-marketing" name="consent-marketing">
+              <span>
+                I consent to receive marketing text messages from Richardson Partners, LLC at the phone
+                number provided. Frequency may vary. Message &amp; data rates may apply. Text HELP for
+                assistance, reply STOP to opt out.
+              </span>
+            </label>
+            <label class="consent-option">
+              <input type="checkbox" id="consent-non-marketing" name="consent-non-marketing">
+              <span>
+                I consent to receive non-marketing text messages from Richardson Partners, LLC about my
+                order updates, appointment reminders etc. Frequency may vary. Message &amp; data rates may
+                apply. Text HELP for assistance, reply STOP to opt out.
+              </span>
+            </label>
+          </fieldset>
+          <button type="submit" class="btn btn-primary form-submit">Submit</button>
+          <nav class="form-legal" aria-label="Legal">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+          </nav>
+        </form>
       </div>
     </section>
 
@@ -179,9 +175,9 @@
         <p>Veteran-owned real estate solutions.</p>
       </div>
       <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
         <a href="/contact">Contact</a>
       </div>
       <div class="footer-contact">
@@ -201,5 +197,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>
