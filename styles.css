@@ -723,6 +723,24 @@ a {
   text-align: center;
 }
 
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.footer-legal a {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition);
+}
+
+.footer-legal a:hover {
+  color: var(--gold-light);
+}
+
 /* ── Animations ── */
 
 @keyframes fadeUp {
