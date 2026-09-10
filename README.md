@@ -31,7 +31,7 @@ https://richardsonpartnersllc.com/contact-thom/qr
 ## Structure
 
 ```
-RichardsonHoldingsSite/
+RichardsonPartnersSite/
 ├── index.html           # Single-page site
 ├── contact-thom/        # Mobile contact card (QR code)
 │   ├── index.html
