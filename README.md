@@ -33,6 +33,10 @@ https://richardsonpartnersllc.com/contact-thom/qr
 ```
 RichardsonPartnersSite/
 ├── index.html           # Single-page site
+├── contact/             # Contact form (A2P compliance)
+│   ├── index.html
+│   ├── contact.css
+│   └── contact.js
 ├── contact-thom/        # Mobile contact card (QR code)
 │   ├── index.html
 │   ├── card.css
