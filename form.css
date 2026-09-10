@@ -155,6 +155,47 @@
   color: var(--gold);
 }
 
+.form-success {
+  background: var(--white);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--gray-200);
+  box-shadow: 0 16px 48px rgba(0, 0, 102, 0.08);
+  text-align: center;
+}
+
+.form-success-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 102, 0.08);
+  color: var(--navy);
+}
+
+.form-success-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.form-success h2 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+
+.form-success p {
+  color: var(--gray-600);
+  line-height: 1.7;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
 @media (max-width: 600px) {
   .form-row {
     grid-template-columns: 1fr;
